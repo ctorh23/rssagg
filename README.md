@@ -1,2 +1,2 @@
-# rssagg
-RSS Aggregator
+# RSS Aggregator
+The application is under construction.
