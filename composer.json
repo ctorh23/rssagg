@@ -1,0 +1,15 @@
+{
+    "name": "ctorh23/rssagg",
+    "description": "RSS Aggregator",
+    "autoload": {
+        "psr-4": {
+            "Ctorh23\\RssAgg\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stoyan Dimitrov"
+        }
+    ],
+    "require": {}
+}
