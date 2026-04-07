@@ -1,0 +1,21 @@
+server {
+    listen 80;
+    server_name localhost;
+    root ${WEB_ROOT};
+
+    location / {
+        try_files $uri $uri/ /index.php$is_args$args;
+    }
+
+    location ~ \.php$ {
+        fastcgi_pass ${FASTCGI_HOST}:${FASTCGI_PORT};
+        fastcgi_param SCRIPT_FILENAME ${WEB_ROOT}$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\. {
+        deny all;
+        access_log off;
+        log_not_found off;
+    }
+}
