@@ -11,5 +11,7 @@
             "name": "Stoyan Dimitrov"
         }
     ],
-    "require": {}
+    "require": {
+        "doctrine/migrations": "^3.9"
+    }
 }
