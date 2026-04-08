@@ -25,7 +25,7 @@ $config = new ConfigurationArray([
         'execution_time_column_name' => 'execution_time',
     ],
     'migrations_paths' => [
-        'DoctrineMigrations' => dirname(__DIR__) . '/Migrations',
+        'DoctrineMigrations' => dirname(__DIR__) . '/migrations',
     ],
     'all_or_nothing' => false,
     'transactional' => false,
