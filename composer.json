@@ -1,17 +1,31 @@
 {
     "name": "ctorh23/rssagg",
     "description": "RSS Aggregator",
-    "autoload": {
-        "psr-4": {
-            "Ctorh23\\RssAgg\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "Stoyan Dimitrov"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "RssAgg\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RssAggTests\\": "tests/"
+        }
+    },
     "require": {
-        "doctrine/migrations": "^3.9"
+        "php": "^8.4",
+        "doctrine/migrations": "^3.9",
+        "symfony/http-foundation": "^8.0",
+        "nikic/fast-route": "^1.3",
+        "php-di/php-di": "^7.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.95",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^13.0"
     }
 }

@@ -1,2 +1,3 @@
 <?php
-phpinfo();
+
+(require dirname(__DIR__) . '/src/bootstrap.php')();
